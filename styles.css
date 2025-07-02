@@ -55,6 +55,16 @@ nav .container {
     background-color: #f0f0f0;
 }
 
+/* Special styling for resume download in navigation */
+.nav-links a[download] {
+    background-color: #4a76ee;
+    color: white;
+}
+
+.nav-links a[download]:hover {
+    background-color: #3a5ddc;
+}
+
 /* Hero Section */
 .hero {
     padding: 4rem 2rem;
@@ -104,6 +114,18 @@ nav .container {
 .btn:hover {
     background-color: #4a76ee;
     color: white;
+}
+
+/* Special styling for resume download button */
+.btn[download] {
+    background-color: #4a76ee;
+    color: white;
+    border-color: #4a76ee;
+}
+
+.btn[download]:hover {
+    background-color: #3a5ddc;
+    border-color: #3a5ddc;
 }
 
 .hero-image {
