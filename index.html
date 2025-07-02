@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimiya Mavaddat - Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Kimiya Mavaddat</a>
+            <ul class="nav-links">
+                <li><a href="https://github.com/qimazo" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a></li>
+                <li><a href="https://ir.linkedin.com/in/kimia-mavaddat-144986168" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a></li>
+                <li><a href="https://www.instagram.com/kimiamavaddat" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a></li>
+                <li><a href="https://www.youtube.com/@KimiaMavaddatt/videos" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a></li>
+                <li><a href="mailto:kimiyamvdt@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hi I'm Kimiya 🎀</h1>
+            <p>
+                I'm an enthusiastic computer science student with a deep passion for programming, storytelling, and building community—especially for Persian girls in STEM. As I develop my skills in Python and software engineering, I bring with me over five years of experience in digital marketing and content creation.
+            </p>
+            <p>
+                Through social media, I've created spaces where young women—especially those from underrepresented backgrounds—can feel seen, supported, and inspired to explore tech. I believe technology isn't just about code; it's about the people it touches.
+            </p>
+            <div class="hero-buttons">
+                <a href="#skills" class="btn">
+                    <i class="fas fa-code"></i>
+                    Skills
+                </a>
+                <a href="#contact" class="btn">
+                    <i class="fas fa-envelope"></i>
+                    Contact
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="hero-headshot.webp" alt="Kimiya Mavaddat">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <p class="skills-description">
+                I'm skilled at creating strategies that help brands grow their online presence through content and storytelling. I also have experience editing videos using Final Cut Pro. As a computer science student, I'm expanding my skills by learning Python, HTML, CSS, and web development.
+            </p>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    HTML
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt"></i>
+                    CSS
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-python"></i>
+                    Python
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-video"></i>
+                    Video Editing
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-bullhorn"></i>
+                    Digital Marketing
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-form">
+                <h2>Contact</h2>
+                <p class="contact-subtitle">Send me a message 💌💖</p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="What is your name?" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="What is your email?" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Drop something here... maybe a message 💬" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Just Send</button>
+                </form>
+            </div>
+            <div class="contact-message">
+                <p>WOMAN</p>
+                <p>LIFE</p>
+                <p>FREEDOM</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Simple smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Simple form submission (just shows an alert for now)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
